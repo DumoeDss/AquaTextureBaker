@@ -69,7 +69,7 @@ namespace AquaSys.TextureBaker
 
         public static Vector4[] SmoothedNormal(Mesh meh)
         {
-            var originData = SmoothNormals.AquaSmoothNormals.ComputeSmoothedNormalsV3(meh);
+            var originData = AquaSmoothNormals.ComputeSmoothedNormalsV3(meh);
             Vector4[] res = new Vector4 [originData.Length];
             for (int i = 0; i < originData.Length; i++)
             {
@@ -80,7 +80,7 @@ namespace AquaSys.TextureBaker
 
         public static Vector4[] SmoothedNormalV2(Mesh meh)
         {
-            var originData = SmoothNormals.AquaSmoothNormals.ComputeSmoothedNormals(meh);
+            var originData = AquaSmoothNormals.ComputeSmoothedNormals(meh);
             Vector4[] res = new Vector4[originData.Length];
             for (int i = 0; i < originData.Length; i++)
             {

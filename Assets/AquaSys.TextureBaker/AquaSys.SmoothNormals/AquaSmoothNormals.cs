@@ -7,8 +7,8 @@ namespace AquaSys.SmoothNormals
 {
     public enum SmoothedNormalType
     {
-        FullVector3,
-        CompressedVector2
+        CompressedVector2,
+        FullVector3
     }
 
     public class AquaSmoothNormals
